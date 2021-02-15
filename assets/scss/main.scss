@@ -1,0 +1,130 @@
+//Styling For Web start
+// For all 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.d-none {
+    display: none !important;
+}
+
+// For all Ends
+// for main conatner
+main.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 85%;
+    // overflow: hidden;
+    // For Header 
+    .header {
+        width: 100%;
+        background: #5495ff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+        .brand-logo h1 {
+            color: #fff;
+        }
+        .navbar .nav-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1;
+        }
+        .nav-menu li a {
+            margin-left: 2rem;
+            font-size: 1.3rem;
+            color: #fff;
+        }
+        .active>a {
+            color: #00ff7e !important;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+    // For Header  Ends
+    // Banner-section 
+    .banner-section {
+        background: url("../img/banner/banner.png")top left no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    // Banner section Ends 
+    // For Mergin Pdf 
+    .merge-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        .merge-process-contaner {
+            padding: 3rem 1rem 1rem 1rem;
+            h3 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            p {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .upload-section {
+                width: 80%;
+                height: 300px;
+                background: url("../img/icon/upload-icon.png") center no-repeat;
+                border: 1px solid #ddd;
+                padding: 2rem;
+                margin: 2rem auto;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .merge-area {
+                width: 90%;
+                height: 350px;
+                border: 1px solid #ddd;
+                padding: 2rem;
+                margin: 2rem auto;
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                overflow: auto !important;
+                .preview_pages {
+                    width: 30%;
+                    height: 300px;
+                    max-height: 300px;
+                    border: 1px solid #ddd;
+                    margin-left: 1rem;
+                    margin-top: 1rem;
+                    background-clip: content-box;
+                }
+            }
+            .merge-button-con {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .merge_pdf_button {
+                    background: #5495ff;
+                    color: #fff;
+                    padding: 1rem;
+                    outline: none;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    // For Mergin Pdf Ends
+}
+
+// for main conatner Ends
+//Styling For Web Ends

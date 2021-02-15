@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pdf World</title>
+    <link rel="icon" href="assets/img/logo/logo.png" type="image/*" sizes="16x16">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="assets/css/pdf_viewer.min.css">
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        <!-- Header Start  -->
+
+        <header class="header">
+            <div class="brand-logo">
+                <a href="index.html">
+                    <h1>PDF WORLD</h1>
+                </a>
+            </div>
+
+            <div class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="pdf_merge.html">Merge Pdf</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Header Ends  -->
+
+
+        <!-- Merge Section  -->
+        <div class="merge-container">
+            <section class="merge-process-contaner">
+                <h3>Upload Pdf To Merge</h3>
+                <p>Upload Multiple Pdf at once to start merging</p>
+                <div class="upload-section"></div>
+                <input type="file" name="upload_multiple_pdf[]" id="upload_multiple_pdf" multiple accept="application/pdf" class="d-none">
+
+                <div class="merge-area d-none">
+
+                </div>
+                <div class="merge-button-con d-none">
+                    <input type="hidden" id="total_pages">
+                    <a href="javascript:void(0)" name="merge_these_pdf" id="merge_these_pdf" class="merge_pdf_button">Merge PDF</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Merge Section Ends -->
+
+        <!-- Main Container Ends-->
+    </main>
+
+    <script src="assets/js/jspdf.min.js"></script>
+    <script src="assets/js/pdf.min.js"></script>
+    <script src="assets/js/pdf.worker.min.js"></script>
+    <script src="assets/js/pdf_merge.js"></script>
+</body>
+
+</html>
